@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Are You a citizen : <span id="ans"></span></h2>
+    <h2>Are You over 21 : <span id="ans1"></span></h2>
+
+    <label>Are You a citizen</label>
+    <input type="checkbox" id="chk1" />
+    <label>Are You over 21</label>
+    <input type="checkbox" id="chk2" />
+
+    <script>
+
+      const someCheckbox = document.getElementById("chk1");
+
+      someCheckbox.addEventListener("change", (e) => {
+        if (e.target.checked === true) {
+          document.getElementById("ans").innerHTML = "Yes";
+        }
+        else{
+          document.getElementById("ans").innerHTML = "No";
+        }
+      });
+
+      const someCheckbox1 = document.getElementById("chk2");
+
+      someCheckbox1.addEventListener("change", (e) => {
+        if (e.target.checked === true) {
+          document.getElementById("ans1").innerHTML = "Yes";
+        }
+        else{
+          document.getElementById("ans1").innerHTML = "No";
+        }
+      });
+    </script>
+  </body>
+</html>
