@@ -7,6 +7,8 @@ import swal from 'sweetalert';
 import { async } from '@firebase/util';
 import axios from 'axios';
 
+// add product
+
 function Addproduct() {
 
     const redirect = useNavigate();
